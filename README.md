@@ -38,6 +38,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 1️⃣ Constructors & Initialization
 
 | Function	| Description |
+| :--- | ---: |
 | clsDate()	|	ينشئ كائن بتاريخ النظام الحالي.
 | clsDate(string Date)	|	ينشئ تاريخ من نص بصيغة DD/MM/YYYY.
 | clsDate(short Day, short Month, short Year)	|	ينشئ تاريخ يدويًا.
@@ -46,6 +47,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 2️⃣ Properties (Getters & Setters)
 
 | Property	| Description |
+| :--- | ---: |
 | Day	| قراءة أو تعديل اليوم.|
 | Month	| قراءة أو تعديل الشهر.|
 | Year	| قراءة أو تعديل السنة.|
@@ -53,6 +55,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 3️⃣ Validation & Leap Year
 
 | Function	| Description |
+| :--- | ---: |
 | IsValidDate(Date)	|التحقق من صحة تاريخ معين (Static).|
 | IsValid()	|التحقق من صحة تاريخ الكائن الحالي.|
 | isLeapYear(Year)	|التحقق مما إذا كانت السنة كبيسة (Static).|
@@ -61,6 +64,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 4️⃣ Date Conversion & Display
 
 | Function	| Description |
+| :--- | ---: |
 | DateToString(Date)	|تحويل التاريخ إلى نص DD/MM/YYYY (Static).|
 | DateToString()	|تحويل تاريخ الكائن إلى نص.|
 | Print()	|طباعة التاريخ على الشاشة.|
@@ -69,6 +73,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 5️⃣ Days, Hours & Time Calculations
 
 | Function	| Description |
+| :--- | ---: |
 | NumberOfDaysInAYear(Year)	|عدد أيام السنة.|
 | NumberOfHoursInAYear(Year)	|عدد الساعات في السنة.|
 | NumberOfMinutesInAYear(Year)	|عدد الدقائق في السنة.|
@@ -81,6 +86,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 6️⃣ Day & Month Information
 
 | Function	| Description |
+| :--- | ---: |
 | DayOfWeekOrder(Day,Month,Year)	|إرجاع ترتيب اليوم (0 = Sun).|
 | DayShortName()	|إرجاع اسم اليوم المختصر.|
 | MonthShortName()	|إرجاع اسم الشهر المختصر.|
@@ -88,6 +94,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 7️⃣ Calendars
 
 | Function	| Description |
+| :--- | ---: |
 | PrintMonthCalendar(Month,Year)	|طباعة تقويم شهر معين.|
 | PrintMonthCalendar()	|طباعة تقويم شهر الكائن.|
 | PrintYearCalendar(Year)	|طباعة تقويم سنة كاملة.|
@@ -96,12 +103,14 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 8️⃣ Date Position & Ordering
 
 | Function	| Description |
+| :--- | ---: |
 | DaysFromTheBeginingOfTheYear()	|عدد الأيام منذ بداية السنة.|
 | GetDateFromDayOrderInYear(Order,Year)	|تحويل ترتيب اليوم إلى تاريخ.|
 
 ### 9️⃣ Date Comparison
 
 | Function	| Description |
+| :--- | ---: |
 | IsDate1BeforeDate2(Date1,Date2)	|التحقق إذا كان تاريخ قبل آخر.|
 | IsDate1AfterDate2(Date1,Date2)	|التحقق إذا كان تاريخ بعد آخر.|
 | IsDate1EqualDate2(Date1,Date2)	|التحقق من تساوي تاريخين.|
@@ -110,12 +119,14 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 🔟 Date Difference & Age
 
 | Function	| Description |
+| :--- | ---: |
 | GetDifferenceInDays(Date1,Date2)	|حساب الفرق بالأيام بين تاريخين.|
 | CalculateMyAgeInDays(DateOfBirth)	|حساب العمر بالأيام.|
 
 ### 1️⃣1️⃣ Date Increase Operations
 
 | Function	| Description |
+| :--- | ---: |
 | AddOneDay()	|زيادة يوم واحد.|
 | AddDays(Days)	|إضافة عدد أيام.|
 | IncreaseDateByOneWeek()	|زيادة أسبوع.|
@@ -131,6 +142,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 1️⃣2️⃣ Date Decrease Operations
 
 | Function	| Description |
+| :--- | ---: |
 | DecreaseDateByOneDay()	|إنقاص يوم واحد.|
 | DecreaseDateByOneWeek()	|إنقاص أسبوع.|
 | DecreaseDateByXWeeks(Weeks)	|إنقاص عدة أسابيع.|
@@ -145,6 +157,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 1️⃣3️⃣ Business Days & Week Operations
 
 | Function	| Description |
+| :--- | ---: |
 | IsWeekEnd()	|التحقق إذا كان اليوم عطلة.|
 | IsBusinessDay()	|التحقق إذا كان يوم عمل.|
 | IsEndOfWeek()	|التحقق إذا كان نهاية الأسبوع.|
@@ -155,6 +168,7 @@ The library focuses on managing dates, performing calculations, validations, com
 ### 1️⃣4️⃣ Vacation & Business Calculations
 
 | Function	| Description |
+| :--- | ---: |
 | CalculateBusinessDays(DateFrom,DateTo)	|حساب أيام العمل بين تاريخين.|
 | CalculateVacationDays(DateFrom,DateTo)	|حساب أيام الإجازة.|
 | CalculateVacationReturnDate(DateFrom,VacationDays)	|حساب تاريخ العودة من الإجازة.
